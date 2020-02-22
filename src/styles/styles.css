@@ -1,3 +1,63 @@
 body {
   color: red;
 }
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+
+  /* flex-flow combines the flex-direction and flex wrap properties into one. note: used the flex: sizepx property/value in the item in order to wrap the content; */
+  flex-flow: row wrap;
+  border: 2px solid yellow;
+}
+
+/* begin adding borders */
+.sidebar-wrapper,
+.content-wrapper {
+  border: solid pink 2px;
+}
+
+.sidebar,
+.header,
+.content,
+.footer,
+.main {
+  border: solid green 2px;
+}
+
+.section {
+  border: solid blue 2px;
+}
+
+.blog-double {
+  border: solid purple 2px;
+}
+/* end adding borders */
+
+.blog-title {
+  text-align: center;
+}
+
+.sidebar-wrapper {
+  width: 25%;
+  flex: 1 200px;
+  text-align: center;
+}
+
+.content-wrapper {
+  width: 75%;
+}
+
+.section {
+  flex: 1 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.greg-emoticon {
+  width: 10em;
+}
