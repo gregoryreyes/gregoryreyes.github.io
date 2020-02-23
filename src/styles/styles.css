@@ -1,5 +1,7 @@
 body {
-  color: red;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 .main-wrapper {
@@ -37,27 +39,73 @@ body {
 }
 /* end adding borders */
 
-.blog-title {
-  text-align: center;
-}
-
+/* start sidebar styles */
 .sidebar-wrapper {
+  display: none;
+  height: 100vh;
   width: 25%;
   flex: 1 200px;
   text-align: center;
+  /*margin: 0 2em;*/
+  /*background-color: #4b8c97;*/
+  background-color: #d82029;
+  /*background-color: #f5f5f5;*/
+  color: #fff;
 }
 
-.content-wrapper {
-  width: 75%;
-}
-
-.section {
-  flex: 1 200px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.sidebar {
+  margin: 2em;
 }
 
 .greg-emoticon {
   width: 10em;
+  /*margin: 2em;*/
+  border-radius: 50%;
+}
+
+.intro > p {
+  text-align: left;
+}
+/* end sidebar styles */
+
+
+
+.content-wrapper {
+  height: 100vh;
+  flex: 10;
+  width: 100%;
+  display: flex;
+  /*flex-flow: column wrap;*/
+  flex-direction: column;
+}
+
+.blog-spacer {
+  background-color: #d82029;
+  color: #fff;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  /*flex-flow: column wrap;*/
+}
+
+.section {
+  flex: 1 200px;
+}
+
+.footer {
+  min-height: 10em;
+  color: #fff;
+  background-color: #191919;
+}
+
+@media only screen and ( min-width: 948px ) {
+  .sidebar-wrapper {
+    display: block;
+  }
+
+  .content-wrapper {
+    width: 75%;
+  }
 }
