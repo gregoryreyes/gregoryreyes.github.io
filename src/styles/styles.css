@@ -4,19 +4,21 @@ body {
   color: #333;
 }
 
-.main-wrapper {
+.blog-wrapper {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   /*flex-direction: column;*/
   /*flex-direction: row;*/
   /*flex-wrap: wrap;*/
 
   /* flex-flow combines the flex-direction and flex wrap properties into one. note: used the flex: sizepx property/value in the item in order to wrap the content; */
-  flex-flow: row wrap;
-  border: 2px solid yellow;
+  /*flex-flow: row wrap;*/
 }
 
 /* begin adding borders */
+.blog-wrapper {
+  border: 2px solid yellow;
+}
 .sidebar-wrapper,
 .content-wrapper {
   border: solid pink 2px;
@@ -34,7 +36,7 @@ body {
   border: solid blue 2px;
 }
 
-.blog-double {
+.article {
   border: solid purple 2px;
 }
 /* end adding borders */
@@ -42,13 +44,16 @@ body {
 /* start sidebar styles */
 .sidebar-wrapper {
   display: none;
-  height: 100vh;
-  width: 25%;
-  flex: 1 200px;
+  position: fixed;
+  left: 0;
+  height: -webkit-fill-available;
+  width: 20%;
+  /*flex: 1 200px;*/
   text-align: center;
   /*margin: 0 2em;*/
   /*background-color: #4b8c97;*/
   background-color: #d82029;
+  /*background-color: #a31621;*/
   /*background-color: #f5f5f5;*/
   color: #fff;
 }
@@ -58,8 +63,7 @@ body {
 }
 
 .greg-emoticon {
-  width: 10em;
-  /*margin: 2em;*/
+  width: 7.8em;
   border-radius: 50%;
 }
 
@@ -68,37 +72,43 @@ body {
 }
 /* end sidebar styles */
 
-
-
 .content-wrapper {
   height: 100vh;
-  flex: 10;
-  width: 100%;
   display: flex;
-  /*flex-flow: column wrap;*/
   flex-direction: column;
 }
 
 .blog-spacer {
   background-color: #d82029;
+  /*background-color: #a31621;*/
   color: #fff;
 }
 
-.main {
+.main-content {
   flex-grow: 1;
-  display: flex;
-  /*flex-flow: column wrap;*/
 }
 
-.section {
-  flex: 1 200px;
+/* start article section styles */
+.blog-article-wrapper {
+  display: grid;
+  grid-gap: 2em;
+  margin: 0 2em;
 }
 
+.article {
+  margin: 2em 0;
+}
+/* end article section styles */
+
+/* start footer styles */
 .footer {
   min-height: 10em;
   color: #fff;
   background-color: #191919;
+  /*background-color: #4e8098;*/
+  /*background-color: #ced3dc;*/
 }
+/* end footer styles */
 
 @media only screen and ( min-width: 948px ) {
   .sidebar-wrapper {
@@ -106,6 +116,10 @@ body {
   }
 
   .content-wrapper {
-    width: 75%;
+    margin: 0 0 0 20%;
+  }
+
+  .blog-article-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
