@@ -1,0 +1,45 @@
+.sidebar-wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  height: -webkit-fill-available;
+  width: 20%;
+  /*flex: 1 200px;*/
+  text-align: center;
+  /*margin: 0 2em;*/
+  /*background-color: #4b8c97;*/
+  background-color: #d82029;
+  /*background-color: #a31621;*/
+  /*background-color: #f5f5f5;*/
+  color: #fff;
+  box-shadow: inset -2px 0 5px 0 rgba(0,0,0,.4);
+}
+
+.sidebar {
+  margin: 2em;
+}
+
+.greg-emoticon {
+  width: 7.8em;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.intro-name {
+  text-transform: uppercase;
+  border-bottom: solid 4px #fff;
+}
+
+.intro-title {
+  text-transform: uppercase;
+}
+
+.intro-description {
+  text-align: left;
+}
+
+@media only screen and ( min-width: 948px ) {
+  .sidebar-wrapper {
+    display: block;
+  }
+}
