@@ -44,6 +44,15 @@
 }*/
 /* end adding borders */
 
+.holder {
+  align-self: center;
+  margin: 0 4em;
+}
+
+.holder-content {
+  max-width: 980px;
+}
+
 .content-wrapper {
   height: 100vh;
   display: flex;
@@ -60,6 +69,8 @@
 .main-content {
   margin: 0 4em;
   flex-grow: 1;
+  max-width: 980px;
+  align-self: center;
 }
 
 .blog-article-wrapper {
@@ -68,15 +79,13 @@
   /*margin: 0 2em;*/
 }
 
-.blog-card {
-  margin: 2em 0;
-}
-
 .article {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  padding: 2em;
+      border-radius: 0 0 5px 5px;
+  /*padding: 2em;*/
   /*background-color: #f1f1f1;*/
+  /*background-color: #000;*/
 }
 
 .article:hover {
@@ -85,6 +94,42 @@
 
 .archive-link {
   text-align: right;
+}
+
+.blog-card {
+  margin: 2em 0;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-image:hover {
+  /*background-color: #000;*/
+  opacity: 0.8;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.card-image-wrapper {
+  /*background-color: #000;*/
+}
+
+.card-content-wrapper {
+  margin: 2em;
+  padding-bottom: 2em;
+}
+
+.card-title {
+  /*background-color: #fff;*/
+  /*position: relative;*/
+  /*bottom: 1.5em;*/
+  /*margin: 2em;*/
+}
+
+.card-content {
+  /*background-color: #fff;*/
 }
 /* end main section styles */
 
