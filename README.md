@@ -1,5 +1,5 @@
 # gregoryreyes.github.io
-Greg's Blog
+Greg's Blog: https://gregoryreyes.github.io/
 
 Colors
 Selected a color scheme from coolors.co
