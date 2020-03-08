@@ -1,14 +1,15 @@
 @import url("sidebar.css");
+@import url("../../styleguide/styleguide.css");
 
-.blog-home {
+.blog-body {
   margin: 0;
   padding: 0;
   color: #333;
-  font-family: "HelveticaNeue", "Arial";
+  /*font-family: "HelveticaNeue", "Arial";*/
 }
 
 .blog-wrapper {
-  display: flex;
+  /*display: flex;*/
   /*justify-content: center;*/
   /*flex-direction: column;*/
   /*flex-direction: row;*/
@@ -44,12 +45,20 @@
 }*/
 /* end adding borders */
 
-.holder {
-  align-self: center;
-  margin: 0 4em;
+/*.blog-container {
+  margin: 0 auto;
+  padding: 1em 0;
+  max-width: 980px;
+}*/
+
+.header {
+  /*align-self: center;*/
+  /*margin: 0 auto;*/
+  /*padding: 1em 0;*/
+  /*max-width: 1180px;*/
 }
 
-.holder-content {
+.header-content {
   max-width: 980px;
 }
 
@@ -57,6 +66,13 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.gr-nav-ul > .gr-nav-li {
+  display: inline;
+  position: relative;
+  top: 1em;
+  margin: 0 0 0 2em;
 }
 
 .blog-spacer {
@@ -69,23 +85,26 @@
 .main-content {
   margin: 0 4em;
   flex-grow: 1;
-  max-width: 980px;
+  /*max-width: 980px;*/
+  align-self: center;
+}
+
+.section-wrapper {
+  margin: 0 4em;
+  /*flex-grow: 1;*/
+  /*max-width: 980px;*/
   align-self: center;
 }
 
 .blog-article-wrapper {
   display: grid;
   grid-gap: 4em;
-  /*margin: 0 2em;*/
 }
 
 .article {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-      border-radius: 0 0 5px 5px;
-  /*padding: 2em;*/
-  /*background-color: #f1f1f1;*/
-  /*background-color: #000;*/
+  border-radius: 0 0 5px 5px;
 }
 
 .article:hover {
@@ -135,7 +154,7 @@
 
 /* start footer styles */
 .footer {
-  min-height: 10em;
+  /*min-height: 10em;*/
   color: #fff;
   background-color: #191919;
   /*background-color: #4e8098;*/
@@ -143,12 +162,14 @@
 }
 /* end footer styles */
 
+@media only screen and ( min-width: 640px ) {
+  .blog-article-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and ( min-width: 948px ) {
   .content-wrapper {
     margin: 0 0 0 20%;
-  }
-
-  .blog-article-wrapper {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

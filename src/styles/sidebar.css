@@ -1,6 +1,7 @@
 .sidebar-wrapper {
   display: none;
   position: fixed;
+  overflow-y: auto;
   left: 0;
   height: -webkit-fill-available;
   width: 20%;
@@ -23,19 +24,30 @@
   width: 7.8em;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: solid 6px #fbc200;
 }
 
 .intro-name {
   text-transform: uppercase;
-  border-bottom: solid 4px #fff;
+  margin: 1em 0 0.2em;
 }
 
 .intro-title {
   text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+.underline {
+  background-color: #fbc200;
+  width: 88%;
+  height: 6px;
+  position: relative;
+  left: 6%;
 }
 
 .intro-description {
   text-align: left;
+  margin: 1em;
 }
 
 @media only screen and ( min-width: 948px ) {
