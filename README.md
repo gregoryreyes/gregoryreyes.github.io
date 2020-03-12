@@ -1,5 +1,5 @@
 # gregoryreyes.github.io
 Greg's Blog: https://gregoryreyes.github.io/
 
-Style Guid
+Style Guide
 https://gregoryreyes.github.io/styleguide/styleguide.html

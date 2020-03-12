@@ -195,6 +195,10 @@
   font-size: 1.4em;
   line-height: 0.5em;
 }
+
+.logo-link {
+  text-decoration: none;
+}
 /* end logo styles */
 
 /* start gr section title */
