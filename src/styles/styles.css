@@ -1,67 +1,12 @@
-@import url("sidebar.css");
 @import url("../../styleguide/styleguide.css");
+@import url("sidebar.css");
+@import url("header.css");
 
 .blog-body {
   margin: 0;
   padding: 0;
   color: #333;
-  /*font-family: "HelveticaNeue", "Arial";*/
 }
-
-.blog-wrapper {
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*flex-direction: column;*/
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
-
-  /* flex-flow combines the flex-direction and flex wrap properties into one. note: used the flex: sizepx property/value in the item in order to wrap the content; */
-  /*flex-flow: row wrap;*/
-}
-
-/* begin adding borders */
-/*.blog-wrapper {
-  border: 2px solid yellow;
-}
-.sidebar-wrapper,
-.content-wrapper {
-  border: solid pink 2px;
-}
-
-.sidebar,
-.header,
-.content,
-.footer,
-.main {
-  border: solid green 2px;
-}
-
-.section {
-  border: solid blue 2px;
-}
-
-.article {
-  border: solid purple 2px;
-}*/
-/* end adding borders */
-
-/*.blog-container {
-  margin: 0 auto;
-  padding: 1em 0;
-  max-width: 980px;
-}*/
-
-.header {
-  /*margin: 0 4em;*/
-  /*align-self: center;*/
-  /*margin: 0 auto;*/
-  /*padding: 1em 0;*/
-  /*max-width: 1180px;*/
-}
-
-/*.header-content {
-  max-width: 980px;
-}*/
 
 .content-wrapper {
   height: 100vh;
@@ -69,40 +14,14 @@
   flex-direction: column;
 }
 
-.nav-wrapper {
-  background-color: #d82029;
-}
-
-.gr-blog-logo {
-  position: relative;
-  top: 0.7em;
-}
-
-.gr-nav-ul {
-  grid-area: 1 / span 11;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-}
-
-.gr-nav-li {
-  display: inline;
-  position: relative;
-  top: 1em;
-  /*margin: 0 0 0 2em;*/
-}
-
-.gr-nav-li > a {
-  text-decoration: none;
-  /*font-size: 1.5em;*/
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
+@media only screen and ( min-width: 948px ) {
+  .content-wrapper {
+    margin: 0 0 0 22%;
+  }
 }
 
 .blog-spacer {
   background-color: #d82029;
-  /*background-color: #a31621;*/
   color: #fff;
 }
 
@@ -116,14 +35,18 @@
 
 .section-wrapper {
   margin: 0 4em;
-  /*flex-grow: 1;*/
-  /*max-width: 980px;*/
   align-self: center;
 }
 
 .blog-article-wrapper {
   display: grid;
   grid-gap: 4em;
+}
+
+@media only screen and ( min-width: 640px ) {
+  .blog-article-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .article {
@@ -136,10 +59,6 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.archive-link {
-  text-align: right;
-}
-
 .blog-card {
   margin: 2em 0;
 }
@@ -150,7 +69,6 @@
 }
 
 .card-image:hover {
-  /*background-color: #000;*/
   opacity: 0.8;
   filter: brightness(70%);
   cursor: pointer;
@@ -165,36 +83,64 @@
   padding-bottom: 2em;
 }
 
-.card-title {
-  /*background-color: #fff;*/
-  /*position: relative;*/
-  /*bottom: 1.5em;*/
-  /*margin: 2em;*/
+.archive-link {
+  text-align: right;
 }
 
-.card-content {
-  /*background-color: #fff;*/
+.archive-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fbc200;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.888em;
+  padding: 0.8em;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  vertical-align: middle;
+  font-size: 0.888em;
+  font-weight: 600;
+}
+
+.archive-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.archive-button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  /*right: -20px;*/
+  transition: 0.5s;
+}
+
+.archive-button:hover span {
+  /*padding-right: 12px;*/
+}
+
+.archive-button:hover span:after {
+  color: #000;
+  /*font-size: 2em;*/
+  opacity: 1;
+  right: 0;
+}
+
+.archive-button-link {
+  text-decoration: none;
+  color: #333;
 }
 /* end main section styles */
 
 /* start footer styles */
 .footer {
-  /*min-height: 10em;*/
   color: #fff;
   background-color: #191919;
-  /*background-color: #4e8098;*/
-  /*background-color: #ced3dc;*/
 }
 /* end footer styles */
-
-@media only screen and ( min-width: 640px ) {
-  .blog-article-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and ( min-width: 948px ) {
-  .content-wrapper {
-    margin: 0 0 0 20%;
-  }
-}
