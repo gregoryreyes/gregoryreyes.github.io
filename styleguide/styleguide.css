@@ -12,91 +12,12 @@
   max-width: 980px;
 }
 
-/*.gr-grid {
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-}
-
-.gr-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
-
-/*[class*="gr-col-"] {*/
-  /*float: left;*/
-  /*padding: 15px 0;*/
-  /*border: 1px solid red;*/
-/*}*/
-
-/*.styleguide-wrapper {
-  margin: 1em;
-  max-width: 1180px;
-}*/
-
-/*.gr-col-1 {
-  width: 8.33%;
-}
-.gr-col-2 {
-  width: 16.66%;
-}
-.gr-col-3 {
-  width: 25%;
-}
-.gr-col-4 {
-  width: 33.33%;
-}
-.gr-col-5 {
-  width: 41.66%;
-}
-.gr-col-6 {
-  width: 50%;
-}
-.gr-col-7 {
-  width: 58.33%;
-}
-.gr-col-8 {
-  width: 66.66%;
-}
-.gr-col-9 {
-  width: 75%;
-}
-.gr-col-10 {
-  width: 83.33%;
-}
-.gr-col-11 {
-  width: 91.66%;
-}
-.gr-col-12 {
-  width: 100%;
-}
-
-@media only screen and (max-width: 948px) {
-  [class*="gr-col-"] {
-    /*width: 50%;*/
-  /*}*/
-/*}*/
-
-/*@media only screen and (max-width: 640px) {
-  [class*="gr-col-"] {
-    width: 100%;
-  }
-}*/
-/* // gr grid */
-
 .gr-color-box {
     display: block;
     width: 8em;
     height: 3em;
     border-radius: 5px;
 }
-
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
 
 /* == gr grid */
 .gr-grid-wrapper {
@@ -153,9 +74,30 @@
 .gr-grid-twelve {
   grid-area: 1 / span 12;
 }
-/* == gr grid */
 
-/* start logo styles */
+@media only screen and ( max-width: 499px ) {
+  .gr-grid-wrapper > .gr-grid-one,
+  .gr-grid-two,
+  .gr-grid-three,
+  .gr-grid-four,
+  .gr-grid-five,
+  .gr-grid-seven,
+  .gr-grid-eight,
+  .gr-grid-nine,
+  .gr-grid-ten,
+  .gr-grid-eleven,
+  .gr-grid-twelve {
+    grid-area: 1/ span 12;
+  }
+
+  .nav-list-container {
+    position: relative;
+    top: 2.5em;
+  }
+}
+/* // gr grid */
+
+/* == logo styles */
 .logo {
   background-color: #d82029;
   width: 3.4em;
@@ -184,7 +126,6 @@
   display: block;
   content: "";
   left: 0;
-  /*bottom: 13px;*/
   width: 2.2em;
   height: 5px;
   position: absolute;
@@ -199,9 +140,9 @@
 .logo-link {
   text-decoration: none;
 }
-/* end logo styles */
+/* // logo styles */
 
-/* start gr section title */
+/* == gr section title */
 .gr-section-title-light {
   color: #000000;
   text-transform: uppercase;
@@ -209,7 +150,6 @@
   font-size: 1.33333rem;
   font-weight: 500;
   text-align: left;
-  /*margin-bottom: 0.75rem;*/
   padding: 0 0 1.25rem;
   position: relative;
 }
@@ -232,7 +172,6 @@
   font-size: 1.33333rem;
   font-weight: 500;
   text-align: left;
-  /*margin-bottom: 0.75rem;*/
   padding: 0 0 1.25rem;
   position: relative;
 }
@@ -247,4 +186,4 @@
   position: absolute;
   background-color: #fbc200;
 }
-/* start gr section title
+/* // gr section title
