@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
   <title>Greg Reyes | Web Developer</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/styles/styles.css">
   <link rel="shortcut icon" href="includes/images/favicon.png" />
 </head>
@@ -20,7 +21,7 @@
         </div>
 
         <div class="intro">
-          <h1 class="intro-name">Greg Reyes</h1>
+          <h1 class="intro-name">Greg</h1>
           <div class="underline"></div>
           <div class="intro-title">Web Developer</div>
           <p class="intro-description">
@@ -49,23 +50,39 @@
           <div class="section-wrapper">
             <div class="blog-container">
 
-                <nav class="gr-grid-wrapper">
+                <nav class="gr-grid-wrapper gr-nav-wrapper">
 
-                  <div class="gr-grid-one gr-blog-logo">
+                  <!-- <div class="gr-grid-one gr-blog-logo">
                     <div class="gr-section-title-dark">
                       <strong>
                         GAR<span class="logo-bracket">></span>
                       </strong>
                     </div>
+                  </div> -->
+
+                  <!-- == gr logo -->
+                  <div class="gr-logo gr-grid-one">
+                    <div class="gr-logo-top">
+                      <span class="gr-logo-circle"></span>
+                      <span class="gr-logo-circle"></span>
+                      <span class="gr-logo-circle"></span>
+                    </div>
+
+                    <div class="gr-logo-text">
+                      <span class="tech-mono">greg:></span>
+                      <span class="gr-underscore">_</span>
+                      <input class="gr-logo-input tech-mono" maxlength="8" type="text">
+                    </div>
                   </div>
+                  <!-- // gr logo -->
 
                   <div class="gr-grid-eleven">
                     <div class="nav-list-container">
                       <ul class="gr-nav-ul">
                         <li class="gr-nav-li"><a class="gr-li-a" href="includes/about.html">About</a></li>
                         <li class="gr-nav-li"><a class="gr-li-a" href="includes/projects.html">Projects</a></li>
-                        <li class="gr-nav-li"><a class="gr-li-a" href="includes/blog.html">blog</a></li>
-                        <li class="gr-nav-li"><a class="gr-li-a" href="includes/contact.html">Contact</a></li>
+                        <li class="gr-nav-li"><a class="gr-li-a" href="includes/archive.html">blog</a></li>
+                        <li class="gr-nav-li"><a class="gr-li-a" href="#contact">Contact</a></li>
                       </ul>
                     </div>
                   </div>
@@ -76,17 +93,21 @@
           </div>
         </div>
 
+      </header>
+
+      <div class="gr-blog-intro-wrap">
         <div class="section-wrapper">
           <div class="blog-container">
+            <div class="gr-blog-introduction">
               <p>
                 Sustainable mumblecore chartreuse, hoodie ethical trust fund dreamcatcher snackwave thundercats hella migas activated charcoal irony listicle. Small batch hot chicken locavore, tumblr godard crucifix hashtag listicle you probably haven't heard of them kinfolk. Ethical single-origin coffee before they sold out, echo park selvage chillwave squid man bun narwhal mixtape iPhone austin. Food truck four dollar toast organic, pitchfork sustainable put a bird on it yuccie meggings four loko. Artisan typewriter hot chicken cardigan polaroid.
               </p>
+            </div>
           </div>
         </div>
+      </div>
 
-      </header>
-
-      <div class="blog-spacer">
+      <!-- <div class="blog-spacer">
 
         <div class="section-wrapper">
 
@@ -105,7 +126,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
 
       <main class="main-content">
 
@@ -117,7 +138,7 @@
               <div class="gr-col-12">
                 <div class="gr-section-title-light">
                   <strong>
-                    Card section
+                    Latest blog posts
                   </strong>
                 </div>
               </div>
@@ -125,7 +146,7 @@
 
             <div class="blog-article-wrapper">
               <div class="landing-card">
-                <article class="article">
+                <article class="article blog-card">
                   <div class="card-image-wrapper">
                     <img class="card-image" src="includes/images/nyc.jpg" alt="The city that never sleeps">
                   </div>
@@ -152,7 +173,7 @@
 
               <div class="landing-card">
 
-                <article class="article">
+                <article class="article blog-card">
                   <div class="card-image-wrapper">
                     <img class="card-image" src="includes/images/wp-camp.jpg" alt="WordPress Developer">
                   </div>
@@ -178,7 +199,7 @@
               </div>
 
               <div class="landing-card">
-                <article class="article">
+                <article class="article blog-card">
                   <div class="card-image-wrapper">
                     <img class="card-image" src="includes/images/basketball.jpg" alt="Ball is life">
                   </div>
@@ -204,7 +225,7 @@
               </div>
 
               <div class="landing-card">
-                <article class="article">
+                <article class="article blog-card">
                   <div class="card-image-wrapper">
                     <img class="card-image" src="includes/images/headphones.jpg" alt="Musicology">
                   </div>
@@ -232,20 +253,21 @@
             </div>
 
             <!-- <div class="archive-link">
-              <a href="includes/archive.html">Read more ></a>
-            </div> -->
-
-            <div class="archive-link">
               <button class="archive-button">
                 <span>
                   <a class="archive-button-link" href="includes/archive.html">read more</a>
                 </span>
               </button>
+            </div> -->
+
+            <div class="archive-button-wrap">
+              <button class="archive-button">
+                <span>
+                  <a class="archive-link" href="includes/archive.html">Read more ></a>
+                </span>
+              </button>
             </div>
 
-            <h2>
-              Where in the World is Carmen Sandiego?
-            </h2>
 
           </div>
 
@@ -253,28 +275,87 @@
       </main>
 
       <div class="blog-spacer">
+        <div class="section-wrapper">
+          <div class="blog-container">
 
-        <div class="gr-row">
-          <div class="gr-col-12">
-            <div class="gr-section-title-dark">
-              <strong>
-                Card section
-              </strong>
+            <div class="gr-row">
+              <div class="gr-col-12">
+
+                <div id="contact" class="gr-section-title-dark">
+                  <strong>
+                    Contact
+                  </strong>
+                </div>
+
+              </div>
+            </div>
+
+            <form class="gr-contact-form" action="#">
+              <label class="gr-form-label" for="gr-form-fname">First Name</label>
+              <input class="gr-form-input" type="text" id="gr-form-fname" name="firstname" placeholder="John">
+
+              <label class="gr-form-label" for="gr-form-lname">Last Name</label>
+              <input class="gr-form-input" type="text" id="gr-form-lname" name="lastname" placeholder="Smith">
+
+              <label class="gr-form-label" for="gr-form-subject">Subject</label>
+              <textarea id="gr-form-subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+              <button type="submit" class="archive-button archive-link gr-contact-form-button">Submit</button>
+
+              <!-- <div class="archive-button-wrap">
+                <button class="archive-button">
+                  <span>
+                    <a class="archive-link" href="includes/archive.html">Submit</a>
+                  </span>
+                </button>
+              </div> -->
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="section-wrapper">
+        <div class="blog-container">
+
+          <div class="gr-row">
+            <div class="gr-col-12">
+
+              <form class="gr-contact-form" action="#">
+                <label class="gr-form-label" for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John">
+
+                <label class="gr-form-label" for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Smith">
+
+
+
+                <label class="gr-form-label" for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+                <button type="submit" class="gr-contact-form-button">Submit</button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div> -->
+
+      <div class="gr-blog-intro-wrap">
+        <div class="section-wrapper">
+          <div class="blog-container">
+            <div class="gr-blog-introduction">
+              <p>
+                Sustainable mumblecore chartreuse, hoodie ethical trust fund dreamcatcher snackwave thundercats hella migas activated charcoal irony listicle. Small batch hot chicken locavore, tumblr godard crucifix hashtag listicle you probably haven't heard of them kinfolk. Ethical single-origin coffee before they sold out, echo park selvage chillwave squid man bun narwhal mixtape iPhone austin. Food truck four dollar toast organic, pitchfork sustainable put a bird on it yuccie meggings four loko. Artisan typewriter hot chicken cardigan polaroid.
+              </p>
             </div>
           </div>
         </div>
-
-      </div>
-
-      <div class="header">
-        <p>
-          Sustainable mumblecore chartreuse, hoodie ethical trust fund dreamcatcher snackwave thundercats hella migas activated charcoal irony listicle. Small batch hot chicken locavore, tumblr godard crucifix hashtag listicle you probably haven't heard of them kinfolk. Ethical single-origin coffee before they sold out, echo park selvage chillwave squid man bun narwhal mixtape iPhone austin. Food truck four dollar toast organic, pitchfork sustainable put a bird on it yuccie meggings four loko. Artisan typewriter hot chicken cardigan polaroid.
-        </p>
       </div>
 
       <footer class="footer">
-        <!-- Footer -->
-
         <div class="gr-grid-wrapper">
           <div class="gr-grid-one">uno</div>
           <div class="gr-grid-two">
