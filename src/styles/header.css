@@ -19,18 +19,22 @@
   grid-area: 1 / span 11;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .gr-nav-li {
   display: inline;
   position: relative;
-  top: 1.25em;
-  font-size: 0.888em;
+  top: 70px;
+  font-size: 0.7em;
 }
 
-.gr-nav-li:nth-child(n+2) {
+.gr-nav-li {
   margin: 0 0 0 1em;
+}
+
+.gr-nav-li:first-child {
+  margin: 0 0 0 3em;
 }
 
 .gr-nav-li > .gr-li-a {
@@ -60,8 +64,8 @@
 /* medium devices */
 @media ( min-width: 768px ) {
   .gr-nav-li {
-    font-size: 1em;
-    top: 1em;
+    font-size: 0.888em;
+    top: 70px;
   }
 
   .gr-nav-li:nth-child(n+2) {

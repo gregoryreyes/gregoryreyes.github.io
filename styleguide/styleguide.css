@@ -6,6 +6,10 @@
   font-family: "HelveticaNeue", "Arial";
 }
 
+.tech-mono {
+  font-family: "Share Tech Mono", monospace;
+}
+
 .blog-container {
   margin: 0 auto;
   padding: 1em 0;
@@ -97,7 +101,88 @@
 }
 /* // gr grid */
 
-/* == logo styles */
+/* == new logo */
+.gr-logo {
+  margin-top: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 112px;
+}
+
+.gr-logo-top {
+  /*width: 112px;*/
+  height: 14px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #e6e8e6;
+}
+
+.gr-logo-circle {
+  height: 6px;
+  width: 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin:  0 0 2px 0;
+}
+
+.gr-logo-circle:first-child {
+  background-color: #d82029;
+  margin-left: 6px;
+}
+
+.gr-logo-circle:nth-child(2) {
+  background-color: #fbc200;
+}
+
+.gr-logo-circle:nth-child(3) {
+  background-color: #70D18C;
+}
+
+.gr-logo-text {
+  /*width: 112px;*/
+  height: 64px;
+  border: 3px solid #e6e8e6;
+  border-bottom: 6px solid #e6e8e6;
+  color: #e6e8e6;
+  background: #333;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 4px 0 0 4px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.gr-logo-input {
+  width: 48px;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+  display: inline;
+  background: transparent;
+  border: 0;
+  z-index: 100;
+  color: #fff;
+}
+
+.gr-logo-input:focus {
+  outline: none;
+}
+
+.gr-underscore {
+  animation:blinkingUnderscore 1.4s infinite;
+  font-size: 14px;
+}
+
+@keyframes blinkingUnderscore {
+  0%{ color: #e6e8e6; }
+  49%{ color: #e6e8e6; }
+  60%{ color: transparent; }
+  99%{ color:transparent; }
+  100%{ color: #e6e8e6; }
+}
+/* // new logo */
+
+/* == old logo styles */
 .logo {
   background-color: #d82029;
   width: 3.4em;
@@ -140,11 +225,11 @@
 .logo-link {
   text-decoration: none;
 }
-/* // logo styles */
+/* // old logo styles */
 
 /* == gr section title */
 .gr-section-title-light {
-  color: #000000;
+  color: #333;
   text-transform: uppercase;
   line-height: 1.2;
   font-size: 1.33333rem;
@@ -152,6 +237,7 @@
   text-align: left;
   padding: 0 0 1.25rem;
   position: relative;
+  margin: 1.5em 0 0.5em 0;
 }
 
 .gr-section-title-light:after {
@@ -162,7 +248,8 @@
   width: 64px;
   height: 5px;
   position: absolute;
-  background-color: #d82029;
+  /*background-color: #fbc200;*/
+  background-color: #333;
 }
 
 .gr-section-title-dark {
