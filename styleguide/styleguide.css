@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "HelveticaNeue", "Arial";
+  line-height: 1.4em;
 }
 
 .tech-mono {
@@ -226,6 +227,26 @@
   text-decoration: none;
 }
 /* // old logo styles */
+
+/* == gr blog button */
+.gr-button {
+  padding: 8px;
+  border: 2px solid #d82029;
+  box-shadow: 3px 3px 0 #fbc200;
+  color: #d82029;
+  font-size: 1.222em;
+  font-weight: bold;
+}
+
+.gr-button:hover {
+  box-shadow: 5px 5px 0 #fbc200;
+  cursor: pointer;
+}
+
+.gr-button:focus {
+  outline: none;
+}
+/* // gr blog button */
 
 /* == gr section title */
 .gr-section-title-light {
