@@ -20,18 +20,14 @@
   }
 }
 
-.blog-spacer {
-  background-color: #d82029;
-  color: #fff;
-}
-
 .gr-blog-intro-wrap {
   background-color: #e6e8e6;
-  box-shadow: -2px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: -2px 0 5px 0 rgba( 0, 0, 0, 0.4 );
 }
 
 .gr-blog-introduction {
   margin: 2em 0;
+  font-size: 0.9em;
 }
 
 /* start main section styles */
@@ -59,14 +55,14 @@
 }
 
 .blog-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2 );
   transition: 0.3s;
   border-radius: 0 0 5px 5px;
-  height: 36em;
+  height: 35em;
 }
 
 .article:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.2 );
 }
 
 .card-image {
@@ -80,13 +76,29 @@
   cursor: pointer;
 }
 
-.card-image-wrapper {
-  /*background-color: #000;*/
+.blog-card-caption {
+  text-align: right;
+  margin: 0 1.5em 0 0;
+  font-size: 0.777em;
 }
 
 .card-content-wrapper {
   margin: 2em;
-  padding-bottom: 2em;
+  padding: 0 0 2em 0;
+  font-size: 0.933em;
+}
+
+.card-title {
+  font-size: 1.111em;
+}
+
+.card-title-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.card-title-link:visited {
+  color: #333;
 }
 
 /* == archive button */
@@ -123,57 +135,17 @@
 }
 /* // contact form */
 
-
-/* end main section styles */
-
-/* start footer styles */
-.footer {
-  color: #fff;
-  background-color: #191919;
-  padding-top: 4em;
+/* == single post */
+.gr-blog-hero-wrap {
+  padding-bottom: 66.6%;
+  height: 0;
+  background-color: #c7c7c7;
+  margin: 0 0 1.5em 0;
 }
 
-.footer-content {
-  display: inline-grid;
-  grid: 50px / auto auto;
-  grid-gap: 10px;
-  padding: 10px;
+.gr-blog-hero {
   width: 100%;
 }
+/* // single post */
 
-.footer-div {
-  /*background-color: rgba(255, 255, 255, 0.8);*/
-  /*padding: 20px 0;*/
-  margin: 0 4em;
-}
-
-.footer-div-left {
-  text-align: left;
-}
-
-.footer-div-right {
-  text-align: right;
-}
-
-.footer-copyright {
-  position: relative;
-  top: 4px;
-}
-
-.fa-github {
-  color: #fff;
-  font-size: 1.444em;
-  position: relative;
-  top: 4px;
-}
-
-.footer-email {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*.test-two {
-  grid-area: area;
-}*/
-
-/* end footer styles */
+/* end main section styles */
