@@ -3,13 +3,6 @@
   background-color: #d82029;
 }
 
-.nav-wrapper >
-.section-wrapper >
-.blog-container >
-.gr-grid-wrapper {
-  /*margin: 1em 0 0 0;*/
-}
-
 .gr-blog-logo {
   position: relative;
   top: 0.7em;
@@ -27,9 +20,6 @@
   position: relative;
   top: 70px;
   font-size: 0.7em;
-}
-
-.gr-nav-li {
   margin: 0 0 0 1em;
 }
 
@@ -48,17 +38,22 @@
   color: #fbc200;
 }
 
-@media only screen and ( max-width: 499px ) {
-  .nav-wrapper > .section-wrapper {
-    height: 7em;
-  }
+.gr-li-b {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fbc200;
+  cursor: default;
 }
 
-@media only screen and ( max-width: 640px ) {
-  /*.nav-list-constainer {
-    position: relative;
-    top: 2em;
-  }*/
+@media only screen and ( max-width: 499px ) {
+  .nav-wrapper > .section-wrapper {
+    height: 10em;
+  }
+
+  .gr-nav-li {
+    right: 3em;
+  }
 }
 
 /* medium devices */
