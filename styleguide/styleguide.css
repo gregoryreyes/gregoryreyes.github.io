@@ -209,7 +209,6 @@
   color: #fff;
   font-size: 1.5em;
   font-weight: 600;
-  /*margin: 1em 0;*/
   border-radius: 0.2em;
   text-align: center;
 }
@@ -355,8 +354,9 @@
 
 .footer-fa {
   color: #fff;
-  font-size: 1.444em;
+  font-size: 1.222em;
   position: relative;
   top: 1px;
+  margin: 0 4px;
 }
 /* end footer styles
