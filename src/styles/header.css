@@ -3,11 +3,6 @@
   background-color: #d82029;
 }
 
-.gr-blog-logo {
-  position: relative;
-  top: 0.7em;
-}
-
 .gr-nav-ul {
   grid-area: 1 / span 11;
   display: flex;
