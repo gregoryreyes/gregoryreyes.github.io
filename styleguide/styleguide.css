@@ -208,6 +208,15 @@
 }
 /* // new logo */
 
+/* == gr blockquote */
+.gr-blog-quote {
+  display: inline-block;
+  border-left: 5px solid #fbc200;
+  margin: 1em 0;
+  padding: 0 1em;
+}
+/* // gr blockquote */
+
 /* == gr blog button */
 .gr-button {
   padding: 8px;
