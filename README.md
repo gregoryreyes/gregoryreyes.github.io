@@ -15,3 +15,6 @@ Links:
   * blog - https://gregoryreyes.github.io/
 
   * Style Guide - https://gregoryreyes.github.io/styleguide/styleguide.html
+
+  Udacity Front End Developer Nanodegree Code Review:
+  > "This submission was a commendable one. The work was exceptional! You did an amazing job. After reviewing this submission, I am impressed and satisfied with the effort and understanding put in to make this project a success."
