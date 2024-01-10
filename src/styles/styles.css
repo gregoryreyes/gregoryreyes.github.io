@@ -8,6 +8,10 @@
   color: #333;
 }
 
+.blog-wrapper {
+  min-width: fit-content;
+}
+
 .content-wrapper {
   height: 100vh;
   display: flex;

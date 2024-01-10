@@ -41,9 +41,13 @@
   cursor: default;
 }
 
+.gr-mobile-logo {
+  display: none;
+}
+
 @media only screen and ( max-width: 499px ) {
   .nav-wrapper > .section-wrapper {
-    height: 10em;
+    height: 5em;
   }
 
   .gr-nav-li {
@@ -70,3 +74,24 @@
   }
 }
 /* end blog header */
+
+/* mobile devices */
+@media screen and (max-width: 598px) {
+  .gr-desktop-logo {
+    display: none;
+  }
+
+  .gr-nav-wrapper > .gr-grid-eleven {
+    position: relative;
+    bottom: 5.8em;
+  }
+
+  .gr-nav-ul {
+    font-size: 1.2em;
+  }
+
+  .gr-nav-li:first-child {
+    margin-left: 0.5em;
+  }
+}
+/* end mobile devices */
