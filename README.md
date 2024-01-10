@@ -6,8 +6,6 @@ A multi-page blog website exercise, using best practices for content and page st
 Technologies:
 This project uses HTML and CSS to create a responsive layout with CSS Grid and Flexbox.
 
-~~Instructions:~~
-
 Author:
 **Greg Reyes**
 
